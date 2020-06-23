@@ -1,0 +1,16 @@
+apt install nvim
+#change default shell to fish
+chsh -s `which fish`
+apt install nvim
+
+apt install tmux
+
+#install alacritty
+add-apt-repository ppa:mmstick76/alacritty
+apt install alacritty
+
+curl -L https://get.oh-my.fish | fish
+omf install eclm
+
+cp -R alacritty ~/.config/ && cp -R nvim/ ~/.config/ && cp -R fish/ ~/.config
+cp .tmux.conf ~/
