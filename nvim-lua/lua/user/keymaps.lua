@@ -43,6 +43,7 @@ keymap("n", "<C-l>", "<C-w>l", opts)
 
 -- NerdTree
 keymap("n", "<leader>e", ":NERDTreeToggle<CR>", opts)
+keymap("n", "<leader>r", ":NERDTreeFind<CR>", opts)
 keymap("n", "<leader><tab>", "gt", opts)
 
 keymap("i", "<C-h>", "<Left>", opts)
