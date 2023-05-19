@@ -6,5 +6,5 @@ require "user.lsp"
 require "user.telescope"
 require "user.treesitter"
 require "user.git"
-vim.cmd "colorscheme gruvbox"
+vim.cmd "colorscheme gruvbox-baby"
 

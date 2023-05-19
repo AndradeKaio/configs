@@ -114,6 +114,11 @@ _G.packer_plugins = {
     path = "/Users/kaio/.local/share/nvim/site/pack/packer/start/friendly-snippets",
     url = "https://github.com/rafamadriz/friendly-snippets"
   },
+  ["gruvbox-baby"] = {
+    loaded = true,
+    path = "/Users/kaio/.local/share/nvim/site/pack/packer/start/gruvbox-baby",
+    url = "https://github.com/luisiacc/gruvbox-baby"
+  },
   ["gruvbox.nvim"] = {
     loaded = true,
     path = "/Users/kaio/.local/share/nvim/site/pack/packer/start/gruvbox.nvim",
