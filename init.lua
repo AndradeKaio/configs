@@ -6,5 +6,10 @@ require "user.lsp"
 require "user.telescope"
 require "user.treesitter"
 require "user.git"
-vim.cmd "colorscheme gruvbox-baby"
+-- comments
+require("ibl").setup()
+-- status line
+require('feline').setup()
+-- current theme
+vim.cmd "colorscheme catppuccin-mocha"
 

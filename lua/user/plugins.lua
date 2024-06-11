@@ -47,7 +47,7 @@ return packer.startup(function(use)
     use "nvim-lua/plenary.nvim" -- Useful lua functions used ny lots of plugins
     use "ellisonleao/gruvbox.nvim"
     use "luisiacc/gruvbox-baby"
-
+    use { "catppuccin/nvim", as = "catppuccin" }
   -- cmp plugins
     use "hrsh7th/nvim-cmp" -- The completion plugin
     use "hrsh7th/cmp-buffer" -- buffer completions
@@ -62,9 +62,18 @@ return packer.startup(function(use)
     use "rafamadriz/friendly-snippets" -- a bunch of snippets to use
       -- LSP
 
-    use "williamboman/nvim-lsp-installer" -- simple to use language server installer
+  --use "williamboman/nvim-lsp-installer" -- simple to use language server installer
+    use "williamboman/mason.nvim" -- simple to use language server installer
     use "neovim/nvim-lspconfig" -- enable LSP
-
+  -- comments
+    use {
+        'numToStr/Comment.nvim',
+        config = function()
+            require('Comment').setup()
+        end
+    }
+  -- status line
+    use 'freddiehaddad/feline.nvim'
   -- telescope
     use "nvim-telescope/telescope.nvim"
 
@@ -72,13 +81,15 @@ return packer.startup(function(use)
     use {"nvim-treesitter/nvim-treesitter", run=":TSUpdate"}
   -- identation
     use "lukas-reineke/indent-blankline.nvim"
-
+  -- auto formatter
+    use 'mhartington/formatter.nvim'
   -- nerdtree
     use "preservim/nerdtree"
 
   -- git
     use "tanvirtin/vgit.nvim"
-
+  -- latex
+    use 'lervag/vimtex'
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
   if PACKER_BOOTSTRAP then
